@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/dzm-animation.css">
+    <style>
+        body{
+            text-align: center;
+        }
+    h2{
+        color: #f35626;
+    background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue 60s infinite linear;
+    
+    }
+
+    /* 动画分析过程:
+        1:分析动画运动轨迹 运动现象
+        2: 想一下哪些css属性 可以实现这样的效果
+        3: 根据轨迹变化 进行百分比划分(不一定是等分)   
+            划分方式: 找到几个特殊的峰值 在峰值与峰值之间进行划分
+        4: 在每个不同的百分比区间更改属性的值
+        5: 如果是渐进式的: 值越来越小  直到回到最初状态
+
+        动画运动轨迹: 
+        常用的: 平移 旋转 拉伸: 显示隐藏 透明度 
+    */
+    </style>
+    
+</head>
+<body>
+    <h1>这里展示自己的动画样式</h1>
+    <h2 class="dzm-animation bounce">bounce弹跳动画</h2>
+    <h2 class="dzm-animation bounceLeft">左弹跳</h2>
+    <h2 class="dzm-animation bounceRight">右弹跳</h2>
+    <h2 class="dzm-animation bounceTop">上弹跳</h2>
+    <h2 class="dzm-animation bounceBottom">下弹跳</h2>
+    <h2 class="dzm-animation ">内部弹</h2>
+    <h2 class="dzm-animation flash delay-2s slower">flash闪烁动画</h2>
+    <h2 class="dzm-animation flasher">3速快闪</h2>
+    <h2 class="dzm-animation pules">pules缩放动画</h2>
+    <h2 class="dzm-animation pulesFont">字体放大动画</h2>
+    <h2 style="display: inline-block;" class="dzm-animation rubberBand slower">rubberBand拉伸动画</h2>
+    <h2 class="dzm-animation shake">shake 抖动</h2>
+    <h2 class="dzm-animation swing">swing 摇摆</h2>
+    <h2 class="dzm-animation graduallyPut">graduallyPut摇摆缩放</h2>
+    <h2 class="dzm-animation turntable">turntable摇晃</h2>
+    <h2 class="dzm-animation jello slower">jello 拉伸</h2>
+    <h2 class="dzm-animation lightenOut">lightenOut 闪现出</h2>
+    <h2 class="dzm-animation lightenOutLeft">lightenOut 左闪现出</h2>
+    <h2 class="dzm-animation lightenOutRight">lightenOut 右闪现出</h2>
+    <h2 class="dzm-animation inauguration">inauguration</h2>
+    <h2 class="dzm-animation inaugurationTop">inaugurationTop</h2>
+    <h2 class="dzm-animation inaugurationBottom">inaugurationBottom</h2>
+    <h2 class="dzm-animation heatBeat fast">heatBeat 心跳</h2>
+    <h2 class="dzm-animation bounceOut fast">bounceOut外部弹</h2>
+    <h2 class="dzm-animation bounceOutDown ">bounceOutDown 下部弹</h2>
+    <h2 class="dzm-animation bounceOutUp ">bounceOutDown 上部弹</h2>
+    <h2 class="dzm-animation bounceOutLeft ">bounceOutDown 左部弹</h2>
+    <h2 class="dzm-animation bounceOutRight fast ">bounceOutDown 右部弹</h2>
+    <h2 class="dzm-animation fadeIn">淡出</h2>
+    <h2 class="dzm-animation fadeInDownBig">fadeInDownBig</h2>
+    <h2 class="dzm-animation fadeOut">fadeOut渐隐</h2>
+    <h2 class="dzm-animation fadeOutDown">fadeOutDown下渐隐</h2>
+    <h2 class="dzm-animation fadeOutDownBig">fadeOutDownBig下渐隐大</h2>
+    <h2 class="dzm-animation fadeOutLeft">fadeOutLeft左渐隐</h2>
+    <h2 class="dzm-animation fadeOutLeftBig">fadeOutLeft左渐隐大</h2>
+    <h2 class="dzm-animation fadeOutRight">fadeOutRight右渐隐</h2>
+    <h2 class="dzm-animation fadeOutRightBig">fadeOutRight右渐隐大</h2>
+    <h2 class="dzm-animation fadeOutUp">fadeOutUp上渐隐</h2>
+    <h2 class="dzm-animation fadeOutUpBig">fadeOutUpBig上渐隐大</h2>
+    <h2 class="dzm-animation flip">flip翻转过来变大</h2>
+    <h2 class="dzm-animation flipInX">flipInX x轴前翻转</h2>
+    <h2 class="dzm-animation flipInY">flipInY y轴左翻转</h2>
+    <h2 class="dzm-animation flipOutX">flipOutX x轴后翻转</h2>
+    <h2 class="dzm-animation flipOutY">flipOutY Y轴右翻转</h2>
+
+</body>
+</html>
